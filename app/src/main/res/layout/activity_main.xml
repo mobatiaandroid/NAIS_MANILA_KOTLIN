@@ -21,6 +21,17 @@
         app:layout_constraintTop_toBottomOf="@+id/includeRel"
         app:srcCompat="@drawable/aboutbanner" />
 
+    <com.mobatia.naismanila.custom_view.CustomTextViewRegular
+        android:id="@+id/textView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:justificationMode="inter_word"
+        android:text="Music Academy is an innovative and user-friendly music learning registration app designed exclusively for school children, offering the opportunity to master multiple instruments at their convenience. With a focus on ease of use, personalised scheduling, and comprehensive instrument options, Music Academy is the ideal platform for young music enthusiasts to embark on a journey of musical discovery and growth."
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
     <LinearLayout
         android:id="@+id/mainLinear"
         android:layout_width="match_parent"
@@ -30,7 +41,7 @@
         android:weightSum="100"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView4">
+        app:layout_constraintTop_toBottomOf="@+id/textView">
 
         <RelativeLayout
             android:id="@+id/paymentRelative"
@@ -83,6 +94,7 @@
                 android:text="Button 2"
                 android:textColor="@color/white" />
         </RelativeLayout>
+
         <RelativeLayout
             android:id="@+id/summaryRelative"
             android:layout_width="0dp"
